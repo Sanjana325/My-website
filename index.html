@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mug & Munch</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="logo">Mug & Munch<img src="icon5.png" alt="Coffee Icon">
+            </div>
+               
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#reservation">Reserve Now</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Brewed for You. Baked with Love.</h2>
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <h3>About Us</h3>
+                <p>At Mug & Munch, we take pride in offering an authentic Sri Lankan coffee experience combined with freshly baked pastries made from the finest ingredients. With three welcoming branches located in Colombo, Kandy, and the breathtaking surroundings of Ambuluwawa, we have become a favorite destination for coffee enthusiasts and food lovers alike.</p>
+                <h3>What We Serve</h3>
+                <p>Our coffee is brewed from premium, locally sourced beans, capturing the rich and bold flavors unique to Sri Lanka. Our pastries are crafted daily using fresh ingredients to ensure a delightful culinary experience for every guest.</p>
+                <h3>Our People & Service</h3>
+                <p>The true strength of Mug & Munch lies in our dedicated and friendly staff. Their passion, hospitality, and genuine care for our customers are the key reasons behind our growing success and loyal customer base. Whether you’re grabbing a quick cup on the go or settling in for a relaxed conversation, we are here to serve you with warmth and a smile.</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>Check out our selection of coffees and fresh pastries!</p>
+          
+            <!-- Coffee Section -->
+            <div class="menu-section">
+              <div class="menu-text">
+                <h3>Coffee</h3>
+                <button onclick="toggleTable('coffee-table')">View Coffee Menu</button>
+                <table id="coffee-table" class="menu-table" style="display: none;">
+                  <tr><th>Item</th><th>Price (Rs.)</th></tr>
+                  <tr><td>Espresso</td><td>450</td></tr>
+                  <tr><td>Cappuccino</td><td>500</td></tr>
+                  <tr><td>Americano</td><td>350</td></tr>
+                  <tr><td>Macchiato</td><td>400</td></tr>
+                  <tr><td>Iced Latte</td><td>450</td></tr>
+                  <tr><td>Iced Coffee</td><td>400</td></tr>
+                </table>
+              </div>
+              <div class="menu-image">
+                <img src="coffee2.avif" alt="Coffee Image">
+              </div>
+            </div>
+          
+            <!-- Sweet Pastries Section -->
+            <div class="menu-section reverse">
+              
+              <div class="menu-text">
+                <h3>Sweet Munchies</h3>
+                <button onclick="toggleTable('sweet-table')">View Sweet Menu</button>
+                <table id="sweet-table" class="menu-table" style="display: none;">
+                  <tr><th>Item</th><th>Price (Rs.)</th></tr>
+                  <tr><td>Chocolate Croissant</td><td>300</td></tr>
+                  <tr><td>Strawberry Tart</td><td>350</td></tr>
+                  <tr><td>Pancakes with Maple Syrup</td><td>650</td></tr>
+                  <tr><td>Brownies</td><td>250</td></tr>
+                  <tr><td>Lemon Bars</td><td>200</td></tr>
+                </table>
+              </div>
+
+              <div class="menu-image">
+                <img src="sweet1.avif" alt="Sweet Pastries Image">
+              </div>
+
+            </div>
+          
+            <!-- Savory Items Section -->
+            <div class="menu-section">
+              <div class="menu-text">
+                <h3>Savory Munchies</h3>
+                <button onclick="toggleTable('savory-table')">View Savory Menu</button>
+                <table id="savory-table" class="menu-table" style="display: none;">
+                  <tr><th>Item</th><th>Price (Rs.)</th></tr>
+                  <tr><td>Cheese Bun</td><td>250</td></tr>
+                  <tr><td>Spicy Chicken Roll</td><td>400</td></tr>
+                  <tr><td>Pepperoni Pizza</td><td>950</td></tr>
+                  <tr><td>Egg Sandwiches</td><td>500</td></tr>
+                  <tr><td>Veggie Bun</td><td>350</td></tr>
+                </table>
+              </div>
+              <div class="menu-image">
+                <img src="savory1.avif" alt="Savory Item Image">
+              </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p>Got questions or feedback? Reach out to us anytime!</p>
+            <h2>Contact Us</h2>
+
+              <div class="contact-cards">
+
+                <div class="contact-card">
+                  <div class="icon">📧</div>
+                  <h3>Email Us</h3>
+                  <p>info@mugandmunch.com</p>
+                </div>
+
+                <div class="contact-card">
+                  <div class="icon">📞</div>
+                  <h3>Call Us</h3>
+                  <p>+94 70 **** 810</p>
+                </div>
+
+              </div>
+
+        </section>
+
+        <section id="reservation">
+          <h2>Make a Reservation</h2>
+          <form action="#" method="POST" id="reservation_form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+            <label for="people">For how many people?</label>
+            <input type="number" id="people" name="people" min="1" placeholder="Number of people" required>
+        
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+        
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time" required>
+        
+            <button type="submit">Reserve Now</button>
+          </form>
+
+          <div id="reservation_confirmation" style="display:none; color:white;">
+            <p>Your reservation has been successfully made!</p>
+          </div>
+
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
