@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 #home {
-  background-image: url(5000.jpg);
+  background-image: url(images/5000.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -109,7 +109,7 @@ nav ul li a:hover {
   position: relative;
   padding: 50px 20px;
   text-align: center;
-  background-image: url('about2.avif');
+  background-image: url('images/about2.avif');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -171,7 +171,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center; 
 
-  background-image: url('back7.avif');
+  background-image: url('images/back7.avif');
   background-size: cover;
   background-position: center;
 }
@@ -338,7 +338,7 @@ nav ul li a:hover {
   align-items: center;
   padding: 50px 20px;
   background-color: #fff;
-  background-image: url('form1.avif');
+  background-image: url('images/form1.avif');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

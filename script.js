@@ -3,11 +3,11 @@
             const homeSection = document.querySelector('#home');
           
             h2Element.addEventListener('mouseenter', () => {
-              homeSection.style.backgroundImage = 'url(serve.jpeg)';
+              homeSection.style.backgroundImage = 'url(images/serve.jpeg)';
             });
           
             h2Element.addEventListener('mouseleave', () => {
-              homeSection.style.backgroundImage = 'url(5000.jpg)';
+              homeSection.style.backgroundImage ='url(images/5000.jpg)';
             });
       
             function toggleTable(id) {
