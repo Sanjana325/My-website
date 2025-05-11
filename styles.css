@@ -34,13 +34,16 @@ header {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   white-space: nowrap;
+  display: flex;
+  align-items: center; 
 }
 
 .logo img {
   width: 30px;
   height: auto;
   margin-left: 5px;
-  margin-top: 3px;
+  margin-top: -1px;               
+  vertical-align: middle; 
 }
 
 nav ul {
@@ -55,12 +58,22 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  text-decoration:dotted;
+  font-weight:normal;
+  font-family:aria-label;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 #home {
@@ -401,16 +414,37 @@ form button:hover {
 }
 
 @media (max-width: 768px) { 
+
+  nav ul {
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 80px; /* below header */
+    right: 0;
+    width: 200px;
+    display: none;
+    padding: 20px;
+    z-index: 20;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
   .about-content p {
     width: 90%;
     font-size: 16px;
     padding: 15px;
   }
-}
 
-@media (max-width: 768px) {
   .menu-section {
     flex-direction: column;
     align-items: center;
   }
 }
+
+
