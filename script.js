@@ -9,13 +9,18 @@
             h2Element.addEventListener('mouseleave', () => {
               homeSection.style.backgroundImage ='url(images/5000.jpg)';
             });
+
+            function toggleMenu() {
+              const navMenu = document.querySelector("nav ul");
+              navMenu.classList.toggle("show");
+            }
       
             function toggleTable(id) {
             const table = document.getElementById(id);
             table.style.display = table.style.display === "none" ? "table" : "none";
-        }
+            }
         
-        document.getElementById('reservation_form').addEventListener('submit', function(event) {
+          document.getElementById('reservation_form').addEventListener('submit', function(event) {
             event.preventDefault();
           
             const name = document.getElementById('name').value;
